@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Codding with Curry',
       theme: ThemeData(
 
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.red,
       ),
       initialRoute: 'home',
       routes: {

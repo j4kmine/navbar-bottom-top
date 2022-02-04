@@ -13,7 +13,7 @@ class _HomeState extends State<Home>{
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 3,
+        length: 2,
         child: Scaffold(
       appBar: AppBar(
         title: Text('Home'),
@@ -27,16 +27,13 @@ class _HomeState extends State<Home>{
                 text: "Settings",
                 icon:Icon(Icons.settings)
             )
-            ,Tab(
-                text: "About",
-                icon:Icon(Icons.fastfood)
-            )
+
           ]
         ),
       ),
       drawer: SideDrawer(),
       body: const TabBarView(
-        children: [Welcome(),Info(),About()],
+        children: [Welcome(),Info()],
       )
     )
     );
