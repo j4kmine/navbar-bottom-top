@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:navigation_drawer/screens/home.dart';
 import 'package:navigation_drawer/screens/settings.dart';
+import 'package:navigation_drawer/screens/tabs/top/tab2.dart';
 import 'package:navigation_drawer/screens/videos.dart';
 
 void main() {
@@ -19,8 +20,9 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.red,
       ),
-      initialRoute: 'home',
+      initialRoute: 'tab2',
       routes: {
+        'tab2':(context)=>Tab2(),
         'home':(context)=>Home(),
         'videos':(context)=>Videos(),
         'settings':(context)=>Settings()

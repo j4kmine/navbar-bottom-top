@@ -5,11 +5,20 @@ class Tab3 extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Container(
-        child:const Center(
-            child: Text(
-              'Tab 3',
-              style: TextStyle(fontSize: 24),
-            )
+        child:Column(
+          children: [
+            Container(
+              color: Colors.orange,
+              child: FlutterLogo(
+                size: 60.0,
+              ),
+            ),Container(
+              color: Colors.orange,
+              child: FlutterLogo(
+                size: 60.0,
+              ),
+            ),
+          ],
         )
     );
   }
