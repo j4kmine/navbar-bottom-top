@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:navigation_drawer/screens/form/multi_form.dart';
 import 'package:navigation_drawer/screens/home.dart';
 import 'package:navigation_drawer/screens/settings.dart';
 import 'package:navigation_drawer/screens/tabs/top/tab2.dart';
+import 'package:navigation_drawer/screens/tabs/top/tab3.dart';
 import 'package:navigation_drawer/screens/videos.dart';
 
 void main() {
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: 'tab2',
       routes: {
-        'tab2':(context)=>Tab2(),
+        'tab2':(context)=>MultiForm(),
         'home':(context)=>Home(),
         'videos':(context)=>Videos(),
         'settings':(context)=>Settings()
