@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:navigation_drawer/screens/block/BlockPost.dart';
 import 'package:navigation_drawer/screens/form/multi_form.dart';
+import 'package:navigation_drawer/screens/formsinarmas/form_dyanimc.dart';
 import 'package:navigation_drawer/screens/formsinarmas/form_result.dart';
 import 'package:navigation_drawer/screens/formsinarmas/formnew.dart';
 import 'package:navigation_drawer/screens/home.dart';
@@ -29,14 +30,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return ChangeNotifierProvider<BlockPost>.value(
-      value: BlockPost(),
-      child: MaterialApp(
-        title: 'Codding with Curry',
-        home: Homes(),
-
-      ),
-    );
+    // return ChangeNotifierProvider<BlockPost>.value(
+    //   value: BlockPost(),
+    //   child: MaterialApp(
+    //     title: 'Codding with Curry',
+    //     home: Tab2(),
+    //
+    //   ),
+    // );
     return MaterialApp(
       title: 'Codding with Curry',
       theme: ThemeData(
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: 'tab2',
       routes: {
-        'tab2':(context)=>HomeScreen(),
+        'tab2':(context)=>FormDynamic(),
         'home':(context)=>Home(),
         'videos':(context)=>Videos(),
         'settings':(context)=>Settings()
