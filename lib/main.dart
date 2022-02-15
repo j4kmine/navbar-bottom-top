@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: 'tab2',
       routes: {
-        'tab2':(context)=>FormDynamic(),
+        'tab2':(context)=>Tab2(),
         'home':(context)=>Home(),
         'videos':(context)=>Videos(),
         'settings':(context)=>Settings()
