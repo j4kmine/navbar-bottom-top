@@ -5,6 +5,7 @@ import 'package:navigation_drawer/screens/formsinarmas/form_dyanimc.dart';
 import 'package:navigation_drawer/screens/formsinarmas/form_result.dart';
 import 'package:navigation_drawer/screens/formsinarmas/formnew.dart';
 import 'package:navigation_drawer/screens/home.dart';
+import 'package:navigation_drawer/screens/innoc/homeinnoc.dart';
 import 'package:navigation_drawer/screens/providerget/Homes.dart';
 import 'package:navigation_drawer/screens/settings.dart';
 import 'package:navigation_drawer/screens/statemanagementfirst/HomeScreen.dart';
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: 'tab2',
       routes: {
-        'tab2':(context)=>Tab2(),
+        'tab2':(context)=>HomeInnoc(),
         'home':(context)=>Home(),
         'videos':(context)=>Videos(),
         'settings':(context)=>Settings()

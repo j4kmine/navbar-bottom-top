@@ -21,11 +21,11 @@ class _HomeState extends State<Home>{
         bottom: const TabBar(
           tabs:[
             Tab(
-              text: "Daftar Pekerjaan",
+              text: "List Spear",
 
             ),
             Tab(
-                text: "Hasil Kerja",
+                text: "Cek Hasil Inoc",
 
             )
 
