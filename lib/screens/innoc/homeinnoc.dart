@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:navigation_drawer/screens/innoc/tabinnoc.dart';
+import 'package:navigation_drawer/screens/innoc/tabresult.dart';
 
 class HomeInnoc extends StatefulWidget{
 
@@ -31,7 +32,7 @@ class _HomeInnocState extends State<HomeInnoc>{
               ),
             ),
             body:  TabBarView(
-              children: [TabInnoc(),Text("dd")],
+              children: [TabInnoc(),TabResult()],
             )
         )
     );
