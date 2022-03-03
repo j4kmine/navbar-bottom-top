@@ -26,14 +26,14 @@ class _VideosState extends State<Videos>{
         items: const [
           BottomNavigationBarItem(
               icon: Icon(Icons.camera),
-            title: Text('Camera')
+
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.map),
-              title: Text('Map')
+
           ), BottomNavigationBarItem(
               icon: Icon(Icons.mail),
-              title: Text('Mail')
+
           ),
         ],
       ),
