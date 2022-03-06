@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:navigation_drawer/screens/block/BlockPost.dart';
+import 'package:navigation_drawer/screens/block/DummyPost.dart';
 import 'package:navigation_drawer/screens/form/multi_form.dart';
 import 'package:navigation_drawer/screens/formsinarmas/form_dyanimc.dart';
 import 'package:navigation_drawer/screens/formsinarmas/form_result.dart';
@@ -39,19 +40,27 @@ class MyApp extends StatelessWidget {
     //
     //   ),
     // );
-    return MaterialApp(
-      title: 'Codding with Curry',
-      theme: ThemeData(
 
-        primarySwatch: Colors.red,
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => BlockPost()),
+        ChangeNotifierProvider(create: (context) => DummyPost()),
+      ],
+      child: MaterialApp(
+        title: 'Codding with Curry',
+        theme: ThemeData(
+
+          primarySwatch: Colors.red,
+        ),
+        initialRoute: 'tab2',
+        routes: {
+          'tab2':(context)=>HomeInnoc(),
+          'home':(context)=>Home(),
+          'videos':(context)=>Videos(),
+          'settings':(context)=>Settings()
+        },
       ),
-      initialRoute: 'tab2',
-      routes: {
-        'tab2':(context)=>HomeInnoc(),
-        'home':(context)=>Home(),
-        'videos':(context)=>Videos(),
-        'settings':(context)=>Settings()
-      },
+
 
     );
   }
